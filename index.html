@@ -3,76 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Langrüti 1, Eschikofen — Markenkonzepte</title>
+<title>Langrüti 1, Eschikofen — Markenkonzept</title>
 
 <!--
   ==========================================================================
-  MOODBOARD — Langrüti 1, 8553 Eschikofen (TG)
-  Erzeugt aus moodboard-vorlage.html am 2026-09-04.
-  Geruest-CSS und Umschalter-Skript unveraendert aus der Vorlage.
+  FINALES MARKENKONZEPT — Langrüti 1, 8553 Eschikofen (TG)
 
-  VORGABE DER AUFTRAGGEBERIN (03-inhalte/kundenvorgaben.md):
-  Projektfarbe RGB 145/121/111 = #91796F, gerne zusammen mit Hellgruen.
-  Die Projektfarbe ist in allen drei Konzepten dieselbe; unterschiedlich
-  ist nur der Gruenton. Fuer Schrift und Knoepfe ist sie um 25% abgedunkelt,
-  weil sie im Original nur 4.06:1 erreicht.
+  Von der Kundin gewaehlt am 2026-09-04:
+  Konzept 3 «Feld und Fassade» mit der Typografie von Konzept 2.
+  Die drei Konzepte zur Auswahl stehen weiterhin in
+  konzepte-zur-auswahl.html.
 
-  Gruentoene und Neutralwerte sind RAL-Classic-Farben.
-  Namen: de.wikipedia.org/wiki/RAL-Farbe
-  Hexwerte: en.wikipedia.org/wiki/List_of_RAL_colours
+  Farben: Projektfarbe RGB 145/121/111 (Vorgabe der Auftraggeberin),
+  Gruen- und Neutraltoene nach RAL Classic.
+  Schriften: Archivo und Public Sans, SIL Open Font License.
 
-  Alle Kombinationen auf WCAG 2.1 AA geprueft — Werte in design-tokens.json.
+  Geruest-CSS und Skript unveraendert aus moodboard-vorlage.html.
+  Alle elf Farbkombinationen nach WCAG 2.1 AA geprueft, schwaechste 4.61:1.
   ==========================================================================
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300..700&family=Fraunces:opsz,wght@9..144,300..700&family=Karla:wght@300..700&family=Manrope:wght@300..700&family=Newsreader:opsz,wght@6..72,300..600&family=Public+Sans:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300..700&family=Public+Sans:wght@300..700&display=swap" rel="stylesheet">
 
 <style>
 /* ==========================================================================
-   KONZEPT 1 — Putz und Wiese   (Grün gedeckt — das Ruhigste der drei)
+   MARKENKONZEPT — Konzept 3 «Feld und Fassade», Typografie aus Konzept 2
    ========================================================================== */
 [data-konzept="1"] {
-  --primaer:      #75625B;  /* Projektfarbe #91796F, 25% mit RAL 8022 abgedunkelt — traegt Text */
-  --sekundaer:    #91796F;  /* Projektfarbe der Auftraggeberin, RGB 145/121/111 */
-  --akzent:       #4B573E;  /* RAL 6003 Olivgrün */
-  --hintergrund:  #F7F9EF;  /* RAL 9010 Reinweiss */
-  --text:         #211F20;  /* RAL 8022 Schwarzbraun */
-  --flaeche:      #EFEBDC;  /* RAL 9001 Cremeweiss */
-  --radius:       2px;
-  --schrift-titel: "Newsreader", Georgia, serif;
-  --schrift-text:  "Karla", system-ui, sans-serif;
-}
-
-/* ==========================================================================
-   KONZEPT 2 — Hecke und Haus   (Grün natürlich — die Mitte)
-   ========================================================================== */
-[data-konzept="2"] {
-  --primaer:      #75625B;  /* Projektfarbe #91796F, 25% mit RAL 8022 abgedunkelt — traegt Text */
-  --sekundaer:    #91796F;  /* Projektfarbe der Auftraggeberin, RGB 145/121/111 */
-  --akzent:       #276235;  /* RAL 6002 Laubgrün */
-  --hintergrund:  #F7FBF5;  /* RAL 9016 Verkehrsweiss */
-  --text:         #211F20;  /* RAL 8022 Schwarzbraun */
-  --flaeche:      #EFEBDC;  /* RAL 9001 Cremeweiss */
-  --radius:       0px;
-  --schrift-titel: "Archivo", system-ui, sans-serif;
-  --schrift-text:  "Public Sans", system-ui, sans-serif;
-}
-
-/* ==========================================================================
-   KONZEPT 3 — Feld und Fassade   (Grün frisch — das Wärmste)
-   ========================================================================== */
-[data-konzept="3"] {
-  --primaer:      #75625B;  /* Projektfarbe #91796F, 25% mit RAL 8022 abgedunkelt — traegt Text */
+  --primaer:      #75625B;  /* Projektfarbe #91796F, 25% mit RAL 8022 abgedunkelt */
   --sekundaer:    #91796F;  /* Projektfarbe der Auftraggeberin, RGB 145/121/111 */
   --akzent:       #3E753B;  /* RAL 6010 Grasgrün */
   --hintergrund:  #EFEBDC;  /* RAL 9001 Cremeweiss */
   --text:         #211F20;  /* RAL 8022 Schwarzbraun */
   --flaeche:      #F7FBF5;  /* RAL 9016 Verkehrsweiss */
+  --status:       #B7D9B1;  /* RAL 6019 Weissgrün — nur Flächenfarbe */
   --radius:       12px;
-  --schrift-titel: "Fraunces", Georgia, serif;
-  --schrift-text:  "Manrope", system-ui, sans-serif;
+  --schrift-titel: "Archivo", system-ui, sans-serif;
+  --schrift-text:  "Public Sans", system-ui, sans-serif;
 }
 
 /* ==========================================================================
@@ -245,163 +214,52 @@ section.block + section.block { border-top: 1px solid color-mix(in srgb, var(--t
 <header class="kopf">
   <div class="huelle kopf-inhalt">
     <div class="kopf-titel">Langrüti 1 &middot; Eschikofen</div>
-    <nav class="umschalter" aria-label="Markenkonzept wählen">
-      <button type="button" data-waehle="1" aria-pressed="true">1 &middot; PUTZ UND WIESE</button>
-      <button type="button" data-waehle="2" aria-pressed="false">2 &middot; HECKE UND HAUS</button>
-      <button type="button" data-waehle="3" aria-pressed="false">3 &middot; FELD UND FASSADE</button>
-    </nav>
+    <div class="kopf-titel">Markenkonzept &middot; gewählt am 2026-09-04</div>
   </div>
 </header>
 
 <main>
-
-  <!-- ====================================================================
-       KONZEPT 1 — Putz und Wiese
-       ==================================================================== -->
   <div class="konzept-inhalt aktiv" data-fuer="1">
 
     <section class="block">
       <div class="huelle hero">
         <div>
-          <div class="vorzeile">Konzept 1 &middot; Grün gedeckt — das Ruhigste der drei</div>
-          <h1>Putz und Wiese</h1>
-          <p class="hero-tagline">Die Farbe des Hauses, das Grün nur am Rand.</p>
-          <p class="hero-begruendung">Die Projektfarbe führt, das Grün tritt zurück: Olivgrün ist der gedeckteste der drei Töne und wirkt wie die Schattenseite der Hecke, nicht wie eine Wiese im Mai. Für ein Haus, das sich einfügen und nicht rufen soll.</p>
+          <div class="vorzeile">Das gewählte Konzept</div>
+          <h1>Feld und Fassade</h1>
+          <p class="hero-tagline">Das Grün der Felder ringsum, deutlich gesetzt.</p>
+          <p class="hero-begruendung">Die Projektfarbe der Auftraggeberin führt, Grasgrün setzt den Akzent. Dazu die klare, sachliche Typografie aus Konzept 2 — sie nimmt der warmen Farbwelt die Süsse und hält die Zahlen der Wohnungsliste gut lesbar.</p>
           <div class="marken">
             <span class="marke">Projektfarbe RGB 145/121/111</span>
-            <span class="marke">Olivgrün RAL 6003</span>
-            <span class="marke">Abrieb in Sand</span>
+            <span class="marke">Grasgrün RAL 6010</span>
+            <span class="marke">Archivo &amp; Public Sans</span>
           </div>
         </div>
-        <img class="hero-bild" src="bilder/aussen-balkon-sued.png" alt="Balkon Süd mit Lamellenläden und feinem Stabgeländer">
+        <img class="hero-bild" src="bilder/maisonette-schlafzimmer.png" alt="Schlafzimmer der Maisonette unter der Holzuntersicht">
       </div>
     </section>
 
     <section class="block">
       <div class="huelle">
         <div class="vorzeile">Farbpalette</div>
-        <h2>Fünf Farben</h2>
-        <p class="block-text">Die Projektfarbe RGB 145/121/111 ist in allen drei Konzepten dieselbe. Unterschiedlich ist nur der Grünton. Für Schrift und Knöpfe ist die Projektfarbe um 25&nbsp;% abgedunkelt – im Original erreicht sie nur 4.06:1 und wäre damit nicht barrierefrei lesbar. Anklicken kopiert den Farbwert.</p>
+        <h2>Sieben Farben</h2>
+        <p class="block-text">Die Projektfarbe RGB 145/121/111 ist die Vorgabe der Auftraggeberin. Für Schrift und Knöpfe ist sie um 25&nbsp;% abgedunkelt – im Original erreicht sie nur 4.06:1 und wäre damit nicht barrierefrei lesbar. Grün- und Neutraltöne sind RAL-Classic-Farben. Anklicken kopiert den Farbwert.</p>
         <div class="palette">
-          <button class="farbe" data-hex="#75625B" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#75625B;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Primär</span><span class="farbe-name" style="display:block">Projektfarbe −25 %</span><span class="farbe-hex" style="display:block">#75625B</span></span></button>
-          <button class="farbe" data-hex="#91796F" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#91796F;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Sekundär</span><span class="farbe-name" style="display:block">Projektfarbe</span><span class="farbe-hex" style="display:block">#91796F</span></span></button>
-          <button class="farbe" data-hex="#4B573E" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#4B573E;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Akzent</span><span class="farbe-name" style="display:block">Olivgrün</span><span class="farbe-hex" style="display:block">#4B573E &middot; RAL 6003</span></span></button>
-          <button class="farbe" data-hex="#F7F9EF" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#F7F9EF;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Hintergrund</span><span class="farbe-name" style="display:block">Reinweiss</span><span class="farbe-hex" style="display:block">#F7F9EF &middot; RAL 9010</span></span></button>
-          <button class="farbe" data-hex="#211F20" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#211F20;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Text</span><span class="farbe-name" style="display:block">Schwarzbraun</span><span class="farbe-hex" style="display:block">#211F20 &middot; RAL 8022</span></span></button>
+          <button class="farbe" data-hex="#75625B" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#75625B;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Primär</span><span class="farbe-name" style="display:block">Projektfarbe −25 %</span><span class="farbe-hex" style="display:block">#75625B</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Knöpfe, Wortmarke, Fliesstext in Farbe</span></span></button>
+          <button class="farbe" data-hex="#91796F" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#91796F;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Sekundär</span><span class="farbe-name" style="display:block">Projektfarbe</span><span class="farbe-hex" style="display:block">#91796F</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Flächen, Rahmen, Bildkanten. Trägt keinen Text.</span></span></button>
+          <button class="farbe" data-hex="#3E753B" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#3E753B;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Akzent</span><span class="farbe-name" style="display:block">Grasgrün</span><span class="farbe-hex" style="display:block">#3E753B &middot; RAL 6010</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Vorzeilen, Verweise, Aktionsknopf</span></span></button>
+          <button class="farbe" data-hex="#EFEBDC" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#EFEBDC;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Hintergrund</span><span class="farbe-name" style="display:block">Cremeweiss</span><span class="farbe-hex" style="display:block">#EFEBDC &middot; RAL 9001</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Grundfläche aller Seiten</span></span></button>
+          <button class="farbe" data-hex="#F7FBF5" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#F7FBF5;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Fläche</span><span class="farbe-name" style="display:block">Verkehrsweiss</span><span class="farbe-hex" style="display:block">#F7FBF5 &middot; RAL 9016</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Karten, Felder, Tabellenzeilen</span></span></button>
+          <button class="farbe" data-hex="#211F20" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#211F20;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Text</span><span class="farbe-name" style="display:block">Schwarzbraun</span><span class="farbe-hex" style="display:block">#211F20 &middot; RAL 8022</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Fliesstext und Überschriften</span></span></button>
+          <button class="farbe" data-hex="#B7D9B1" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#B7D9B1;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Status</span><span class="farbe-name" style="display:block">Weissgrün</span><span class="farbe-hex" style="display:block">#B7D9B1 &middot; RAL 6019</span><span style="display:block;font-size:.72rem;opacity:.6;margin-top:.5rem;line-height:1.4">Nur Fläche, z.B. «verfügbar». Als Schrift 1.3:1 — nicht verwendbar.</span></span></button>
         </div>
-        <p class="block-text" style="margin-top:2rem">Ein wirklich helles Grün – RAL 6019 Weissgrün – kommt als reine Flächenfarbe dazu, etwa für den Status «verfügbar» in der Wohnungsliste. Als Schriftfarbe erreicht es nur 1.3:1 und ist dafür nicht verwendbar.</p>
       </div>
     </section>
 
     <section class="block">
       <div class="huelle">
         <div class="vorzeile">Typografie</div>
-        <h2>Zwei Schriften</h2>
-        <p class="block-text">Eine für Überschriften, eine für den Fliesstext. Beide unter der SIL Open Font License – frei verwendbar und später selbst ausgeliefert.</p>
-        <div class="typo">
-          <div class="typo-karte">
-            <div class="typo-rolle">Überschriften</div>
-            <div class="typo-name">Newsreader</div>
-            <div class="probe-gross">Langrüti 1</div>
-            <div class="probe-alphabet" style="word-break:normal;overflow-wrap:break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
-          </div>
-          <div class="typo-karte">
-            <div class="typo-rolle">Fliesstext</div>
-            <div class="typo-name">Karla</div>
-            <p class="probe-text">Dreizehn Eigentumswohnungen an der Langrüti 1 in Eschikofen. Jede Wohnung hat eigenen Aussenraum, einen Waschturm und ein Kellerabteil; der Lift fährt bis ins Dachgeschoss.</p>
-            <div class="probe-alphabet" style="word-break:normal;overflow-wrap:break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Wortmarke</div>
-        <h2>Drei Varianten</h2>
-        <p class="block-text">Als Ausgangspunkt für die Reinzeichnung. Der offizielle Projektname steht noch nicht fest – gezeigt ist die Adresse als Arbeitstitel.</p>
-        <div class="logos">
-          <div class="logo-karte"><div class="logo-flaeche"><div><div class="logo-wort">LANGRÜTI 1</div></div></div><div class="logo-bez">Wortmarke</div></div>
-          <div class="logo-karte"><div class="logo-flaeche"><div><div class="logo-wort">LANGRÜTI 1</div><div class="logo-unterzeile">Eschikofen</div></div></div><div class="logo-bez">Mit Ortszusatz</div></div>
-          <div class="logo-karte"><div class="logo-flaeche"><div><div class="logo-wort">L1</div><div class="logo-unterzeile">Langrüti 1</div></div></div><div class="logo-bez">Signet</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Anwendung</div>
-        <h2>So wirkt es auf der Webseite</h2>
-        <p class="block-text">Ausschnitt aus der späteren Projektwebseite. Drei der dreizehn Wohnungen sind bereits vergeben.</p>
-        <div class="vorschau">
-          <div class="projektkarte">
-            <img class="projektkarte-bild" src="bilder/aussen-gartensitzplatz.png" alt="Gartensitzplatz an der Südfassade">
-            <div class="projektkarte-text">
-              <h3>Langrüti 1</h3>
-              <p>Eschikofen – dreizehn Eigentumswohnungen im Neubau, Bezug voraussichtlich Ende 2027.</p>
-              <button class="knopf knopf-primaer" type="button">Wohnungen ansehen</button>
-              <div class="kennwerte">
-                <div><div class="kennwert-zahl">10</div><div class="kennwert-bez">noch frei</div></div>
-                <div><div class="kennwert-zahl">3.5&ndash;5.5</div><div class="kennwert-bez">Zimmer</div></div>
-                <div><div class="kennwert-zahl">ab CHF 539'000</div><div class="kennwert-bez">Kaufpreis</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="knoepfe">
-            <div><div class="knopf-bez">Primär</div><button class="knopf knopf-primaer" type="button">Wohnungen ansehen</button></div>
-            <div><div class="knopf-bez">Sekundär</div><button class="knopf knopf-sekundaer" type="button">Broschüre anfordern</button></div>
-            <div><div class="knopf-bez">Akzent</div><button class="knopf knopf-akzent" type="button">Beratung vereinbaren</button></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-
-  <!-- ====================================================================
-       KONZEPT 2 — Hecke und Haus
-       ==================================================================== -->
-  <div class="konzept-inhalt" data-fuer="2">
-
-    <section class="block">
-      <div class="huelle hero">
-        <div>
-          <div class="vorzeile">Konzept 2 &middot; Grün natürlich — die Mitte</div>
-          <h1>Hecke und Haus</h1>
-          <p class="hero-tagline">Zwei gleich starke Farben, klar getrennt.</p>
-          <p class="hero-begruendung">Laubgrün hat die Tiefe der geschnittenen Hecke zwischen den Gartensitzplätzen. Projektfarbe und Grün stehen gleichberechtigt nebeneinander, ohne Rundungen und mit grosser Typografie — die sachlichste der drei Haltungen.</p>
-          <div class="marken">
-            <span class="marke">Projektfarbe RGB 145/121/111</span>
-            <span class="marke">Laubgrün RAL 6002</span>
-            <span class="marke">Auskragende Balkone</span>
-          </div>
-        </div>
-        <img class="hero-bild" src="bilder/aussen-gartensitzplatz.png" alt="Südfassade mit Gartensitzplätzen und Balkonen">
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Farbpalette</div>
-        <h2>Fünf Farben</h2>
-        <p class="block-text">Die Projektfarbe RGB 145/121/111 ist in allen drei Konzepten dieselbe. Unterschiedlich ist nur der Grünton. Für Schrift und Knöpfe ist die Projektfarbe um 25&nbsp;% abgedunkelt – im Original erreicht sie nur 4.06:1 und wäre damit nicht barrierefrei lesbar. Anklicken kopiert den Farbwert.</p>
-        <div class="palette">
-          <button class="farbe" data-hex="#75625B" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#75625B;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Primär</span><span class="farbe-name" style="display:block">Projektfarbe −25 %</span><span class="farbe-hex" style="display:block">#75625B</span></span></button>
-          <button class="farbe" data-hex="#91796F" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#91796F;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Sekundär</span><span class="farbe-name" style="display:block">Projektfarbe</span><span class="farbe-hex" style="display:block">#91796F</span></span></button>
-          <button class="farbe" data-hex="#276235" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#276235;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Akzent</span><span class="farbe-name" style="display:block">Laubgrün</span><span class="farbe-hex" style="display:block">#276235 &middot; RAL 6002</span></span></button>
-          <button class="farbe" data-hex="#F7FBF5" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#F7FBF5;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Hintergrund</span><span class="farbe-name" style="display:block">Verkehrsweiss</span><span class="farbe-hex" style="display:block">#F7FBF5 &middot; RAL 9016</span></span></button>
-          <button class="farbe" data-hex="#211F20" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#211F20;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Text</span><span class="farbe-name" style="display:block">Schwarzbraun</span><span class="farbe-hex" style="display:block">#211F20 &middot; RAL 8022</span></span></button>
-        </div>
-        <p class="block-text" style="margin-top:2rem">Ein wirklich helles Grün – RAL 6019 Weissgrün – kommt als reine Flächenfarbe dazu, etwa für den Status «verfügbar» in der Wohnungsliste. Als Schriftfarbe erreicht es nur 1.3:1 und ist dafür nicht verwendbar.</p>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Typografie</div>
-        <h2>Zwei Schriften</h2>
-        <p class="block-text">Eine für Überschriften, eine für den Fliesstext. Beide unter der SIL Open Font License – frei verwendbar und später selbst ausgeliefert.</p>
+        <h2>Archivo und Public Sans</h2>
+        <p class="block-text">Beide unter der SIL Open Font License, frei verwendbar und auf der Webseite selbst ausgeliefert – nicht zur Laufzeit von Google geholt. Das ist schneller und datenschutzfreundlich.</p>
         <div class="typo">
           <div class="typo-karte">
             <div class="typo-rolle">Überschriften</div>
@@ -416,108 +274,17 @@ section.block + section.block { border-top: 1px solid color-mix(in srgb, var(--t
             <div class="probe-alphabet" style="word-break:normal;overflow-wrap:break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Wortmarke</div>
-        <h2>Drei Varianten</h2>
-        <p class="block-text">Als Ausgangspunkt für die Reinzeichnung. Der offizielle Projektname steht noch nicht fest – gezeigt ist die Adresse als Arbeitstitel.</p>
-        <div class="logos">
-          <div class="logo-karte"><div class="logo-flaeche"><div><div class="logo-wort">LANGRÜTI 1</div></div></div><div class="logo-bez">Wortmarke</div></div>
-          <div class="logo-karte"><div class="logo-flaeche"><div><div class="logo-wort">LANGRÜTI 1</div><div class="logo-unterzeile">Eschikofen</div></div></div><div class="logo-bez">Mit Ortszusatz</div></div>
-          <div class="logo-karte"><div class="logo-flaeche"><div><div class="logo-wort">L1</div><div class="logo-unterzeile">Langrüti 1</div></div></div><div class="logo-bez">Signet</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Anwendung</div>
-        <h2>So wirkt es auf der Webseite</h2>
-        <p class="block-text">Ausschnitt aus der späteren Projektwebseite. Drei der dreizehn Wohnungen sind bereits vergeben.</p>
-        <div class="vorschau">
-          <div class="projektkarte">
-            <img class="projektkarte-bild" src="bilder/aussen-balkon-sued.png" alt="Balkon Süd mit Blick ins Grüne">
-            <div class="projektkarte-text">
-              <h3>Langrüti 1</h3>
-              <p>Eschikofen – dreizehn Eigentumswohnungen im Neubau, Bezug voraussichtlich Ende 2027.</p>
-              <button class="knopf knopf-primaer" type="button">Wohnungen ansehen</button>
-              <div class="kennwerte">
-                <div><div class="kennwert-zahl">10</div><div class="kennwert-bez">noch frei</div></div>
-                <div><div class="kennwert-zahl">3.5&ndash;5.5</div><div class="kennwert-bez">Zimmer</div></div>
-                <div><div class="kennwert-zahl">ab CHF 539'000</div><div class="kennwert-bez">Kaufpreis</div></div>
-              </div>
-            </div>
-          </div>
-          <div class="knoepfe">
-            <div><div class="knopf-bez">Primär</div><button class="knopf knopf-primaer" type="button">Wohnungen ansehen</button></div>
-            <div><div class="knopf-bez">Sekundär</div><button class="knopf knopf-sekundaer" type="button">Broschüre anfordern</button></div>
-            <div><div class="knopf-bez">Akzent</div><button class="knopf knopf-akzent" type="button">Beratung vereinbaren</button></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-
-  <!-- ====================================================================
-       KONZEPT 3 — Feld und Fassade
-       ==================================================================== -->
-  <div class="konzept-inhalt" data-fuer="3">
-
-    <section class="block">
-      <div class="huelle hero">
-        <div>
-          <div class="vorzeile">Konzept 3 &middot; Grün frisch — das Wärmste</div>
-          <h1>Feld und Fassade</h1>
-          <p class="hero-tagline">Das Grün der Felder ringsum, deutlich gesetzt.</p>
-          <p class="hero-begruendung">Grasgrün ist der frischeste Ton, der als Schrift noch lesbar bleibt. Zusammen mit dem warmen Cremeweiss und weichen Radien entsteht die einladendste der drei Haltungen — sie spricht Familien an, nicht Architekturkenner.</p>
-          <div class="marken">
-            <span class="marke">Projektfarbe RGB 145/121/111</span>
-            <span class="marke">Grasgrün RAL 6010</span>
-            <span class="marke">Eiche hell</span>
-          </div>
-        </div>
-        <img class="hero-bild" src="bilder/maisonette-schlafzimmer.png" alt="Schlafzimmer der Maisonette unter der Holzuntersicht">
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Farbpalette</div>
-        <h2>Fünf Farben</h2>
-        <p class="block-text">Die Projektfarbe RGB 145/121/111 ist in allen drei Konzepten dieselbe. Unterschiedlich ist nur der Grünton. Für Schrift und Knöpfe ist die Projektfarbe um 25&nbsp;% abgedunkelt – im Original erreicht sie nur 4.06:1 und wäre damit nicht barrierefrei lesbar. Anklicken kopiert den Farbwert.</p>
-        <div class="palette">
-          <button class="farbe" data-hex="#75625B" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#75625B;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Primär</span><span class="farbe-name" style="display:block">Projektfarbe −25 %</span><span class="farbe-hex" style="display:block">#75625B</span></span></button>
-          <button class="farbe" data-hex="#91796F" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#91796F;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Sekundär</span><span class="farbe-name" style="display:block">Projektfarbe</span><span class="farbe-hex" style="display:block">#91796F</span></span></button>
-          <button class="farbe" data-hex="#3E753B" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#3E753B;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Akzent</span><span class="farbe-name" style="display:block">Grasgrün</span><span class="farbe-hex" style="display:block">#3E753B &middot; RAL 6010</span></span></button>
-          <button class="farbe" data-hex="#EFEBDC" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#EFEBDC;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Hintergrund</span><span class="farbe-name" style="display:block">Cremeweiss</span><span class="farbe-hex" style="display:block">#EFEBDC &middot; RAL 9001</span></span></button>
-          <button class="farbe" data-hex="#211F20" style="display:flex;flex-direction:column;align-items:stretch;text-align:left"><span class="farbe-flaeche" style="display:block;flex:0 0 auto;background:#211F20;box-shadow:inset 0 0 0 1px rgba(0,0,0,.09)"></span><span class="farbe-text" style="display:block;flex:1 1 auto"><span class="farbe-rolle" style="display:block">Text</span><span class="farbe-name" style="display:block">Schwarzbraun</span><span class="farbe-hex" style="display:block">#211F20 &middot; RAL 8022</span></span></button>
-        </div>
-        <p class="block-text" style="margin-top:2rem">Ein wirklich helles Grün – RAL 6019 Weissgrün – kommt als reine Flächenfarbe dazu, etwa für den Status «verfügbar» in der Wohnungsliste. Als Schriftfarbe erreicht es nur 1.3:1 und ist dafür nicht verwendbar.</p>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="huelle">
-        <div class="vorzeile">Typografie</div>
-        <h2>Zwei Schriften</h2>
-        <p class="block-text">Eine für Überschriften, eine für den Fliesstext. Beide unter der SIL Open Font License – frei verwendbar und später selbst ausgeliefert.</p>
-        <div class="typo">
-          <div class="typo-karte">
-            <div class="typo-rolle">Überschriften</div>
-            <div class="typo-name">Fraunces</div>
-            <div class="probe-gross">Langrüti 1</div>
-            <div class="probe-alphabet" style="word-break:normal;overflow-wrap:break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
-          </div>
-          <div class="typo-karte">
-            <div class="typo-rolle">Fliesstext</div>
-            <div class="typo-name">Manrope</div>
-            <p class="probe-text">Dreizehn Eigentumswohnungen an der Langrüti 1 in Eschikofen. Jede Wohnung hat eigenen Aussenraum, einen Waschturm und ein Kellerabteil; der Lift fährt bis ins Dachgeschoss.</p>
-            <div class="probe-alphabet" style="word-break:normal;overflow-wrap:break-word">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
+        <div class="typo-karte" style="margin-top:2.5rem">
+          <div class="typo-rolle">Grössenskala</div>
+          <div class="typo-name">Sieben Stufen, keine Einzelwerte</div>
+          <div style="margin-top:1rem">
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-3xl</span><span style="font-family:var(--schrift-titel);font-size:3.5rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Seitentitel &middot; 3.5rem</span></div>
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-2xl</span><span style="font-family:var(--schrift-titel);font-size:2.5rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Abschnittstitel &middot; 2.5rem</span></div>
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-xl</span><span style="font-family:var(--schrift-titel);font-size:1.75rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Zwischentitel &middot; 1.75rem</span></div>
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-lg</span><span style="font-family:var(--schrift-titel);font-size:1.25rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Lead &middot; 1.25rem</span></div>
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-base</span><span style="font-family:var(--schrift-titel);font-size:1.0625rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Fliesstext &middot; 1.0625rem</span></div>
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-sm</span><span style="font-family:var(--schrift-titel);font-size:0.9375rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Nebenangaben &middot; 0.9375rem</span></div>
+            <div style="display:flex;align-items:baseline;gap:1rem;padding:.55rem 0;border-top:1px solid color-mix(in srgb, var(--text) 9%, transparent)"><span style="font-family:ui-monospace,Menlo,monospace;font-size:.72rem;opacity:.5;min-width:5.5rem">--text-xs</span><span style="font-family:var(--schrift-titel);font-size:0.8125rem;line-height:1.1">Langrüti</span><span style="font-size:.72rem;opacity:.55;margin-left:auto;white-space:nowrap">Beschriftungen &middot; 0.8125rem</span></div>
           </div>
         </div>
       </div>
@@ -545,9 +312,10 @@ section.block + section.block { border-top: 1px solid color-mix(in srgb, var(--t
           <div class="projektkarte">
             <img class="projektkarte-bild" src="bilder/maisonette-kueche.png" alt="Küche der Maisonette mit Dachschräge">
             <div class="projektkarte-text">
-              <h3>Langrüti 1</h3>
-              <p>Eschikofen – dreizehn Eigentumswohnungen im Neubau, Bezug voraussichtlich Ende 2027.</p>
-              <button class="knopf knopf-primaer" type="button">Wohnungen ansehen</button>
+              <span style="display:inline-block;background:var(--status);color:var(--text);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .7rem;border-radius:var(--radius);margin-bottom:.9rem">Verfügbar</span>
+              <h3>Wohnung 10 &middot; 4.5 Zimmer Maisonette</h3>
+              <p>1. und 2. Dachgeschoss &middot; 128.2 m² &middot; Balkon 4.1 m²</p>
+              <button class="knopf knopf-primaer" type="button">Wohnung ansehen</button>
               <div class="kennwerte">
                 <div><div class="kennwert-zahl">10</div><div class="kennwert-bez">noch frei</div></div>
                 <div><div class="kennwert-zahl">3.5&ndash;5.5</div><div class="kennwert-bez">Zimmer</div></div>
@@ -564,13 +332,32 @@ section.block + section.block { border-top: 1px solid color-mix(in srgb, var(--t
       </div>
     </section>
 
-  </div>
+    <section class="block">
+      <div class="huelle">
+        <div class="vorzeile">Wie es weitergeht</div>
+        <h2>Vom Konzept zur Webseite</h2>
+        <p class="block-text">Diese Werte gehen unverändert in das Token-System der Webseite. Danach trägt jede Komponente das Branding automatisch, und eine spätere Farbänderung ist eine Änderung an einer einzigen Stelle.</p>
+        <div class="typo">
+          <div class="typo-karte">
+            <div class="typo-rolle">Offen</div>
+            <div class="typo-name">Was noch fehlt</div>
+            <p class="probe-text">Offizieller Projektname, Logo als Vektordatei, Firmenangaben für das Impressum, Urheber der Visualisierungen und die Grundrisse als PDF.</p>
+          </div>
+          <div class="typo-karte">
+            <div class="typo-rolle">Nächster Schritt</div>
+            <div class="typo-name">Token-System aufbauen</div>
+            <p class="probe-text">Die sieben Farben, die beiden Schriften, der Radius von 12 Pixeln und die Grössenskala werden in Primitive-, Semantic- und Component-Tokens übersetzt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+  </div>
 </main>
 
 <footer class="huelle fuss">
   <span>Langrüti 1 &middot; 8553 Eschikofen (TG) &middot; Arbeitstitel, offizieller Projektname noch offen</span>
-  <span>Markenkonzepte für H &amp; M Invest AG &middot; Projektfarbe RGB 145/121/111 &middot; 2026-09-04</span>
+  <span>Markenkonzept für H &amp; M Invest AG &middot; gewählt am 2026-09-04</span>
 </footer>
 
 <div class="hinweis" id="hinweis" role="status" aria-live="polite"></div>

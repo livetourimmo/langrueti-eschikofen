@@ -1,8 +1,96 @@
 {
-  "_hinweis": "Erzeugt von /branding am 2026-09-04. Grundlage fuer /tokens.",
+  "_hinweis": "Erzeugt von /branding am 2026-09-04, Kundenwahl am 2026-09-04 eingetragen. Grundlage fuer /tokens.",
   "projekt": "Langrüti 1, 8553 Eschikofen (TG)",
   "erstellt_am": "2026-09-04",
-  "gewaehltes_konzept": null,
+  "gewaehltes_konzept": {
+    "gewaehlt_am": "2026-09-04",
+    "gewaehlt_von": "H & M Invest AG",
+    "wortlaut_der_kundin": "Also am liebsten Layout 3 mit Schrift 2 :-) geht die Kombi?",
+    "entscheid": "Konzept 3 «Feld und Fassade» — Farben, Radius und Bildsprache. Typografie aus Konzept 2.",
+    "name": "Feld und Fassade",
+    "farben": {
+      "primaer": {
+        "hex": "#75625B",
+        "name": "Projektfarbe −25 %",
+        "herkunft": "#91796F, 25% mit RAL 8022 Schwarzbraun gemischt",
+        "verwendung": "Knöpfe, Wortmarke, Fliesstext in Farbe"
+      },
+      "sekundaer": {
+        "hex": "#91796F",
+        "name": "Projektfarbe",
+        "herkunft": "RGB 145/121/111 — Vorgabe der Auftraggeberin",
+        "verwendung": "Flächen, Rahmen. Trägt keinen Text."
+      },
+      "akzent": {
+        "hex": "#3E753B",
+        "name": "Grasgrün",
+        "ral": "RAL 6010",
+        "verwendung": "Vorzeilen, Verweise, Aktionsknopf"
+      },
+      "hintergrund": {
+        "hex": "#EFEBDC",
+        "name": "Cremeweiss",
+        "ral": "RAL 9001",
+        "verwendung": "Grundfläche"
+      },
+      "flaeche": {
+        "hex": "#F7FBF5",
+        "name": "Verkehrsweiss",
+        "ral": "RAL 9016",
+        "verwendung": "Karten, Felder"
+      },
+      "text": {
+        "hex": "#211F20",
+        "name": "Schwarzbraun",
+        "ral": "RAL 8022",
+        "verwendung": "Fliesstext und Überschriften"
+      },
+      "status": {
+        "hex": "#B7D9B1",
+        "name": "Weissgrün",
+        "ral": "RAL 6019",
+        "verwendung": "Nur Fläche, z.B. Status «verfügbar»",
+        "warnung": "Als Schriftfarbe 1.3:1 — nicht verwendbar"
+      }
+    },
+    "schriften": {
+      "ueberschrift": {
+        "familie": "Archivo",
+        "lizenz": "SIL Open Font License 1.1",
+        "herkunft": "Konzept 2"
+      },
+      "fliesstext": {
+        "familie": "Public Sans",
+        "lizenz": "SIL Open Font License 1.1",
+        "herkunft": "Konzept 2"
+      }
+    },
+    "radius_px": 12,
+    "groessenskala_rem": {
+      "xs": 0.8125,
+      "sm": 0.9375,
+      "base": 1.0625,
+      "lg": 1.25,
+      "xl": 1.75,
+      "2xl": 2.5,
+      "3xl": 3.5
+    },
+    "kontrast": {
+      "text_auf_hintergrund": 13.72,
+      "text_auf_flaeche": 15.66,
+      "gedaempfter_text": 6.5,
+      "text_auf_projektfarbe_chip": 8.44,
+      "text_auf_statusgruen": 10.59,
+      "akzent_auf_hintergrund": 4.61,
+      "akzent_auf_flaeche": 5.26,
+      "primaer_auf_hintergrund": 4.81,
+      "primaer_auf_flaeche": 5.49,
+      "knopftext_auf_primaer": 5.49,
+      "knopftext_auf_akzent": 5.26,
+      "besteht_aa": true
+    },
+    "webfont_url": "https://fonts.googleapis.com/css2?family=Archivo:wght@300..700&family=Public+Sans:wght@300..700&display=swap"
+  },
   "projektfarbe": {
     "vorgabe": "RGB 145 / 121 / 111",
     "hex": "#91796F",
@@ -231,5 +319,6 @@
         "besteht_aa": true
       }
     }
-  ]
+  ],
+  "konzepte_zur_auswahl_datei": "konzepte-zur-auswahl.html"
 }
