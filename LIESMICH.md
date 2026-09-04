@@ -1,15 +1,15 @@
 # Langrüti 1, Eschikofen — Markenkonzept
 
-Von der Auftraggeberin gewählt am 2026-09-04:
-**Konzept 3 «Feld und Fassade» mit der Typografie von Konzept 2.**
+Das gewählte Markenkonzept für die Projektwebseite.
+Stand 2026-09-04.
 
-`index.html` per Doppelklick öffnen oder über den Vorschaulink aufrufen.
+**Ansehen:** https://livetourimmo.github.io/langrueti-eschikofen/
 
-## Das Konzept
+## Feld und Fassade
 
 | | |
 |---|---|
-| Projektfarbe | RGB 145/121/111 · `#91796F` — Vorgabe der Auftraggeberin |
+| Projektfarbe | RGB 145/121/111 · `#91796F` |
 | Für Schrift und Knöpfe | `#75625B` — die Projektfarbe um 25 % abgedunkelt |
 | Akzent | RAL 6010 Grasgrün · `#3E753B` |
 | Hintergrund | RAL 9001 Cremeweiss · `#EFEBDC` |
@@ -36,12 +36,7 @@ Alle elf Farbkombinationen sind geprüft, die schwächste liegt bei 4.61:1.
 
 | Datei | Inhalt |
 |---|---|
-| `index.html` | Das finale Markenkonzept |
+| `index.html` | Das Markenkonzept |
 | `konzepte-zur-auswahl.html` | Die drei Konzepte, aus denen gewählt wurde |
-| `design-tokens.json` | Alle Werte strukturiert, Grundlage für den Webseitenbau |
+| `design-tokens.json` | Alle Werte strukturiert |
 | `bilder/` | Verwendete Visualisierungen |
-
-## Offen
-
-Offizieller Projektname, Logo als Vektordatei, Firmenangaben für das
-Impressum, Urheber der Visualisierungen, Grundrisse als PDF.
