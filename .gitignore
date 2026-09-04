@@ -1,0 +1,6 @@
+.DS_Store
+
+# Vorlagendateien des Workspace — gehoeren nicht ins Kundenrepository
+moodboard-vorlage.html
+design-tokens.beispiel.json
+README.md

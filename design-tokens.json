@@ -1,0 +1,235 @@
+{
+  "_hinweis": "Erzeugt von /branding am 2026-09-04. Grundlage fuer /tokens.",
+  "projekt": "Langrüti 1, 8553 Eschikofen (TG)",
+  "erstellt_am": "2026-09-04",
+  "gewaehltes_konzept": null,
+  "projektfarbe": {
+    "vorgabe": "RGB 145 / 121 / 111",
+    "hex": "#91796F",
+    "quelle": "Auftraggeberin, 2026-09-04",
+    "kontrast_original": {
+      "als_text_auf_reinweiss": 3.82,
+      "helle_schrift_darauf": 4.06,
+      "befund": "Traegt in keiner Richtung Fliesstext. Nur fuer grosse Ueberschriften, Flaechen und Rahmen."
+    },
+    "abgeleitet_fuer_text": {
+      "hex": "#75625B",
+      "formel": "color-mix(in srgb, #91796F 75%, RAL 8022 #211F20)",
+      "begruendung": "Der Design-Tokens-Skill verlangt, die Farbe zu korrigieren statt die Anforderung zu senken."
+    }
+  },
+  "hellgruen_reserviert": {
+    "ral": "RAL 6019",
+    "name": "Weissgrün",
+    "hex": "#B7D9B1",
+    "verwendung": "Nur Flaechenfarbe, z.B. Status «verfuegbar» in der Wohnungsliste.",
+    "kontrast_als_text": 1.3,
+    "hinweis": "Als Schriftfarbe nicht verwendbar."
+  },
+  "farbsystem": {
+    "standard": "RAL Classic fuer Gruen- und Neutraltoene; die Projektfarbe ist eine Direktvorgabe der Auftraggeberin",
+    "quelle_namen": "https://de.wikipedia.org/wiki/RAL-Farbe",
+    "quelle_hexwerte": "https://en.wikipedia.org/wiki/List_of_RAL_colours",
+    "verworfen": {
+      "ral_6017_maigruen": "3.71:1 auf Cremeweiss — faellt durch",
+      "ral_6021_blassgruen": "2.31:1 — faellt durch",
+      "ral_6019_weissgruen": "1.30:1 — nur als Flaeche verwendbar",
+      "ral_6025_farngruen": "4.42:1 auf RAL 9001 Cremeweiss — faellt durch"
+    }
+  },
+  "schriftsystem": {
+    "regel": "Zwei Familien je Konzept, sechs ueber alle drei, alle SIL Open Font License.",
+    "webfont_url": "https://fonts.googleapis.com/css2?family=Archivo:wght@300..700&family=Fraunces:opsz,wght@9..144,300..700&family=Karla:wght@300..700&family=Manrope:wght@300..700&family=Newsreader:opsz,wght@6..72,300..600&family=Public+Sans:wght@300..700&display=swap"
+  },
+  "konzepte": [
+    {
+      "nummer": 1,
+      "name": "Putz und Wiese",
+      "haltung": "Grün gedeckt — das Ruhigste der drei",
+      "tagline": "Die Farbe des Hauses, das Grün nur am Rand.",
+      "begruendung": "Die Projektfarbe führt, das Grün tritt zurück: Olivgrün ist der gedeckteste der drei Töne und wirkt wie die Schattenseite der Hecke, nicht wie eine Wiese im Mai. Für ein Haus, das sich einfügen und nicht rufen soll.",
+      "farben": {
+        "primaer": {
+          "hex": "#75625B",
+          "name": "Projektfarbe abgedunkelt",
+          "herkunft": "#91796F, 25% mit RAL 8022 Schwarzbraun gemischt"
+        },
+        "sekundaer": {
+          "hex": "#91796F",
+          "name": "Projektfarbe",
+          "herkunft": "RGB 145/121/111 — Vorgabe der Auftraggeberin"
+        },
+        "akzent": {
+          "hex": "#4B573E",
+          "name": "Olivgrün",
+          "ral": "RAL 6003"
+        },
+        "hintergrund": {
+          "hex": "#F7F9EF",
+          "name": "Reinweiss",
+          "ral": "RAL 9010"
+        },
+        "text": {
+          "hex": "#211F20",
+          "name": "Schwarzbraun",
+          "ral": "RAL 8022"
+        },
+        "flaeche": {
+          "hex": "#EFEBDC",
+          "name": "Cremeweiss",
+          "ral": "RAL 9001"
+        }
+      },
+      "schriften": {
+        "ueberschrift": {
+          "familie": "Newsreader",
+          "lizenz": "SIL Open Font License 1.1"
+        },
+        "fliesstext": {
+          "familie": "Karla",
+          "lizenz": "SIL Open Font License 1.1"
+        }
+      },
+      "radius_px": 2,
+      "kontrast": {
+        "text_auf_hintergrund": 15.41,
+        "text_auf_flaeche": 13.72,
+        "text_auf_projektfarbe_chip": 9.05,
+        "gedaempfter_text_auf_hintergrund": 6.92,
+        "primaer_auf_hintergrund": 5.4,
+        "primaer_auf_flaeche": 4.81,
+        "knopftext_auf_primaer": 4.81,
+        "akzent_auf_hintergrund": 7.23,
+        "akzent_auf_flaeche": 6.44,
+        "knopftext_auf_akzent": 6.44,
+        "besteht_aa": true
+      }
+    },
+    {
+      "nummer": 2,
+      "name": "Hecke und Haus",
+      "haltung": "Grün natürlich — die Mitte",
+      "tagline": "Zwei gleich starke Farben, klar getrennt.",
+      "begruendung": "Laubgrün hat die Tiefe der geschnittenen Hecke zwischen den Gartensitzplätzen. Projektfarbe und Grün stehen gleichberechtigt nebeneinander, ohne Rundungen und mit grosser Typografie — die sachlichste der drei Haltungen.",
+      "farben": {
+        "primaer": {
+          "hex": "#75625B",
+          "name": "Projektfarbe abgedunkelt",
+          "herkunft": "#91796F, 25% mit RAL 8022 Schwarzbraun gemischt"
+        },
+        "sekundaer": {
+          "hex": "#91796F",
+          "name": "Projektfarbe",
+          "herkunft": "RGB 145/121/111 — Vorgabe der Auftraggeberin"
+        },
+        "akzent": {
+          "hex": "#276235",
+          "name": "Laubgrün",
+          "ral": "RAL 6002"
+        },
+        "hintergrund": {
+          "hex": "#F7FBF5",
+          "name": "Verkehrsweiss",
+          "ral": "RAL 9016"
+        },
+        "text": {
+          "hex": "#211F20",
+          "name": "Schwarzbraun",
+          "ral": "RAL 8022"
+        },
+        "flaeche": {
+          "hex": "#EFEBDC",
+          "name": "Cremeweiss",
+          "ral": "RAL 9001"
+        }
+      },
+      "schriften": {
+        "ueberschrift": {
+          "familie": "Archivo",
+          "lizenz": "SIL Open Font License 1.1"
+        },
+        "fliesstext": {
+          "familie": "Public Sans",
+          "lizenz": "SIL Open Font License 1.1"
+        }
+      },
+      "radius_px": 0,
+      "kontrast": {
+        "text_auf_hintergrund": 15.66,
+        "text_auf_flaeche": 13.72,
+        "text_auf_projektfarbe_chip": 9.15,
+        "gedaempfter_text_auf_hintergrund": 7.02,
+        "primaer_auf_hintergrund": 5.49,
+        "primaer_auf_flaeche": 4.81,
+        "knopftext_auf_primaer": 4.81,
+        "akzent_auf_hintergrund": 6.96,
+        "akzent_auf_flaeche": 6.1,
+        "knopftext_auf_akzent": 6.1,
+        "besteht_aa": true
+      }
+    },
+    {
+      "nummer": 3,
+      "name": "Feld und Fassade",
+      "haltung": "Grün frisch — das Wärmste",
+      "tagline": "Das Grün der Felder ringsum, deutlich gesetzt.",
+      "begruendung": "Grasgrün ist der frischeste Ton, der als Schrift noch lesbar bleibt. Zusammen mit dem warmen Cremeweiss und weichen Radien entsteht die einladendste der drei Haltungen — sie spricht Familien an, nicht Architekturkenner.",
+      "farben": {
+        "primaer": {
+          "hex": "#75625B",
+          "name": "Projektfarbe abgedunkelt",
+          "herkunft": "#91796F, 25% mit RAL 8022 Schwarzbraun gemischt"
+        },
+        "sekundaer": {
+          "hex": "#91796F",
+          "name": "Projektfarbe",
+          "herkunft": "RGB 145/121/111 — Vorgabe der Auftraggeberin"
+        },
+        "akzent": {
+          "hex": "#3E753B",
+          "name": "Grasgrün",
+          "ral": "RAL 6010"
+        },
+        "hintergrund": {
+          "hex": "#EFEBDC",
+          "name": "Cremeweiss",
+          "ral": "RAL 9001"
+        },
+        "text": {
+          "hex": "#211F20",
+          "name": "Schwarzbraun",
+          "ral": "RAL 8022"
+        },
+        "flaeche": {
+          "hex": "#F7FBF5",
+          "name": "Verkehrsweiss",
+          "ral": "RAL 9016"
+        }
+      },
+      "schriften": {
+        "ueberschrift": {
+          "familie": "Fraunces",
+          "lizenz": "SIL Open Font License 1.1"
+        },
+        "fliesstext": {
+          "familie": "Manrope",
+          "lizenz": "SIL Open Font License 1.1"
+        }
+      },
+      "radius_px": 12,
+      "kontrast": {
+        "text_auf_hintergrund": 13.72,
+        "text_auf_flaeche": 15.66,
+        "text_auf_projektfarbe_chip": 8.44,
+        "gedaempfter_text_auf_hintergrund": 6.5,
+        "primaer_auf_hintergrund": 4.81,
+        "primaer_auf_flaeche": 5.49,
+        "knopftext_auf_primaer": 5.49,
+        "akzent_auf_hintergrund": 4.61,
+        "akzent_auf_flaeche": 5.26,
+        "knopftext_auf_akzent": 5.26,
+        "besteht_aa": true
+      }
+    }
+  ]
+}
